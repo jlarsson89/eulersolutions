@@ -5,6 +5,5 @@ fn main() {
             tot += i;
         }
     }
-    let s: String = tot.to_string();
-    println!("{}", s);
+    println!("{}", tot);
 }
