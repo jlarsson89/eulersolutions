@@ -10,13 +10,17 @@ fn main() {
         }
         i += 1;
     }
-    if n > 1 { array.push(n) };
+    if n > 1 {
+    	array.push(n) 
+    }
     loop {
         let top = match array.pop() {
             None => break,
             Some(x) => x,
         };
-        if top > largest { largest = top };
+        if top > largest { 
+        	largest = top 
+        }
     }
     println!("{}", largest);
 }
