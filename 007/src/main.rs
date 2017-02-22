@@ -1,11 +1,12 @@
 fn is_prime(n: i32) -> bool {
+    let x = (n as f32).sqrt() as i32 + 1;
     if n < 2 {
         return false;
     }
     if n < 4 {
         return true;
     }
-    for i in 2..n {
+    for i in 2..x {
         if n % i == 0 {
             return false;
         }
